@@ -1,0 +1,6 @@
+{
+  "token": "${RomeFish}",
+  "engine": "python3 my_engine.py",
+  "name": "RomeFishBot",
+  "variant": "standard"
+}
