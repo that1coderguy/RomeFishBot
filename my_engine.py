@@ -17,11 +17,11 @@ def main():
             sys.stdout.flush()
 
         elif line.startswith("position"):
-            parts = line.split(" ")
+            parts = line.split()
             if "moves" in parts:
                 moves = parts[parts.index("moves") + 1:]
-                for move in moves:
-                    board.push_uci(move)
+                for m in moves:
+                    board.push_uci(m)
 
         elif line.startswith("go"):
             move = next(iter(board.legal_moves))
